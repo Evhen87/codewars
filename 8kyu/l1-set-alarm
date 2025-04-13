@@ -19,3 +19,8 @@ function setAlarm(employed, vacation) {
       return true
    }
 }
+//Best Practices
+/*function setAlarm(employed, vacation){
+  return employed && !vacation;
+}*/
+/* const setAlarm = (employed, vacation) => employed && !vacation;*/
