@@ -11,3 +11,7 @@ class Kata {
       return VolumeOfCuboid = length * width * height;
    }
 }
+//Best Practices
+/*const Kata = {
+  getVolumeOfCuboid : (length, width, height) => length * width * height
+}*/
