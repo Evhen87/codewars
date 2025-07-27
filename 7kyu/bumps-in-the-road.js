@@ -5,8 +5,8 @@
 
 //Solution
 
-function bump(x){
-    return x.split('').reduce((acc, curr)=> curr === 'n' ? ++acc : acc, 0) <= 15 ? "Woohoo!" : "Car Dead"
-}
+// function bump(x){
+//     return x.split('').reduce((acc, curr)=> curr === 'n' ? ++acc : acc, 0) <= 15 ? "Woohoo!" : "Car Dead"
+// }
 
 const bump = (x) => x.split('').reduce((acc, curr)=> curr === 'n' ? ++acc : acc, 0) <= 15 ? "Woohoo!" : "Car Dead"
