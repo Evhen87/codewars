@@ -39,3 +39,7 @@ const findOdd = (A) => {
     return 0;
 }
 
+//Best practice
+// function findOdd(arr) {
+//     return arr.find((item, index) => arr.filter(el => el == item).length % 2)
+// }
