@@ -20,3 +20,9 @@
 //Solution 2
 
 const toNumberArray = (stringarray) => stringarray.map(el => Number(el))
+
+//Best practice
+
+// function toNumberArray(stringarray){
+//     return stringarray.map(Number);
+// }
