@@ -11,7 +11,6 @@
 //Solution
 
 const orderedCount = function (text) {
-    // Implement me!
     let arr = []
     for (let i = 0; i < text.length; i++) {
         const arrEl = arr.find(el => el[0] === text[i])
@@ -23,3 +22,6 @@ const orderedCount = function (text) {
     }
     return arr;
 }
+
+//Best practice
+
