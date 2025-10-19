@@ -4,10 +4,10 @@
 
 //Solution
 
-// function angle(n) {
-//     return 180 * (n - 2)
-// }
+function angle(n) {
+    return 180 * (n - 2)
+}
 
 //Solution 2
 
-const angle = (n) => 180 * (n - 2)
+// const angle = (n) => 180 * (n - 2)
