@@ -21,6 +21,5 @@ function tribonacci(signature,n){
     for (let i = 0; arr.length < n; i++) {
         arr.push(arr[i] + arr[1 + i] + arr[2 + i])
     }
-    console.log(arr)
     return arr.splice(0, n)
 }
