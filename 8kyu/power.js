@@ -10,7 +10,7 @@
 
 //Solution
 
-function numberToPower(number, power){
+function numberToPower(number, power) {
     if (power === 0) return 1
     let result = number
 
