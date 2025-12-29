@@ -12,10 +12,10 @@
 function dashatize(num) {
     return Math.abs(num)
         .toString().split('')
-        .reduce((acc, el, ind, array) => ind === array.length - 1 ? acc = acc + `${el}` :
-                +array[ind + 1] % 2 === 0 && +el % 2 !== 0 ? acc = acc + `${el}-` :
-                    +array[ind + 1] % 2 !== 0 && +el % 2 === 0 ? acc = acc + `${el}-` :
-                        +array[ind + 1] % 2 !== 0 && +el % 2 !== 0 ? acc = acc + `${el}-` :
-                            acc = acc + el
+        .reduce((acc, el, ind, array) => ind === array.length - 1 ? acc + `${el}` :
+                +array[ind + 1] % 2 === 0 && +el % 2 !== 0 ? acc + `${el}-` :
+                    +array[ind + 1] % 2 !== 0 && +el % 2 === 0 ? acc + `${el}-` :
+                        +array[ind + 1] % 2 !== 0 && +el % 2 !== 0 ? acc + `${el}-` :
+                            acc + el
             , '')
 }
