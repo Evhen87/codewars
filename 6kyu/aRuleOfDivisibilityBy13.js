@@ -77,7 +77,7 @@ function thirt(n) {
 
     let result =  n.toString().split('')
             .reverse().map((el, i) => el * repeatingSequence[ i % repeatingSequence.length])
-            .reduce((arr, el) => el + arr)
+            .reduce((arr, el) => el + arr )
 
     return result === n ? result : thirt(result)
 }
