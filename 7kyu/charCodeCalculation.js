@@ -25,7 +25,7 @@ function calc(x){
     }
 
     const total1 = arr.reduce((acc, el) => acc + el, '')
-    const total2 = total1.split('').map(el => el === '7' ? el = '1' : el).join('')
+    const total2 = total1.split('').map(el => el === '7' ? '1' : el).join('')
 
     return total1.split('').reduce((acc, el) => acc + +el, 0) - total2.split('').reduce((acc, el) => acc + +el, 0)
 }
