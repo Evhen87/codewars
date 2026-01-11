@@ -20,6 +20,5 @@ function checkThreeAndTwo(array) {
         }
     }
     const values = Object.values(obj)
-
     return values.includes(3) && values.includes(2)
 }
