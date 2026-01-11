@@ -1,0 +1,29 @@
+//Task
+
+// The Stanton measure of an array is defined as follows:
+//     Let n be the number of times the value 1 appears in the array.
+//     The Stanton measure is then the number of times n appears in the array.
+//
+//     Task
+// Write a function that takes an integer array and returns its Stanton measure.
+//
+//     Examples
+// For [1, 4, 3, 2, 1, 2, 3, 2]:
+// 1 appears 2 times → 2 appears 3 times → Stanton measure = 3.
+//
+// For [1, 4, 1, 2, 11, 2, 3, 1]:
+// 1 appears 3 times → 3 appears 1 time → Stanton measure = 1.
+
+//Solution
+
+function stantonMeasure(a){
+    const aAppears = a.reduce((acc, el) => el === 1 ? acc + 1 : acc, 0)
+    return a.reduce((acc, el) => el === aAppears ? acc + 1 : acc, 0)
+}
+
+//Best Practices
+
+// function stantonMeasure(arr) {
+//     const count = n => arr.filter(x => x === n).length;
+//     return count(count(1));
+// }
