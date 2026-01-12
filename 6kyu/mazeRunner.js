@@ -69,6 +69,5 @@ function mazeRunner(maze, directions) {
         if (maze[position[1]][position[0]] === 1) return "Dead"
         if (maze[position[1]][position[0]] === 3) return "Finish"
     }
-    if (maze[position[1]][position[0]] === 3) return "Finish"
-    else return "Lost"
+    return "Lost"
 }
