@@ -34,3 +34,13 @@
 // "Input number is Number.NEGATIVE_INFINITY"
 // "Input number is Number.POSITIVE_INFINITY"
 // Other values should return "Input number is xxx". xxx means this number.
+
+function whatNumberIsIt(n){
+    if (Number.isNaN(n)) return "Input number is Number.NaN"
+    if (n === Infinity) return "Input number is Number.POSITIVE_INFINITY"
+    if (n === -Infinity) return "Input number is Number.NEGATIVE_INFINITY"
+    if (n === Number.MAX_VALUE) return "Input number is Number.MAX_VALUE"
+    if (n === Number.MIN_VALUE) return "Input number is Number.MIN_VALUE"
+
+    return `Input number is ${n}`
+}
