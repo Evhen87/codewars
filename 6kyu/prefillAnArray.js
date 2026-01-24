@@ -27,6 +27,11 @@
 //Solution
 
 function prefill(n, v) {
-    if (Number.isNaN(+n)) throw new TypeError(`${n} is invalid`)
-    return Array(n).fill(v)
+    const num = parseInt(n, 10);
+
+    if (num === 0) {
+        return []
+    }
+    if (Number.isNaN(+num) || num === Infinity || num === -Infinity || num < 0 || (n / Math.round(num)) !== 1 ) throw new TypeError(`${n} is invalid`)
+    return Array(num).fill(v)
 }
